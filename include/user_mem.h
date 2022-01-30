@@ -18,7 +18,6 @@ void get_user_mem_size(size_t *max_mem, size_t *cur_mem);
 #if defined(__cplusplus)
 }
 #endif
-
 #if defined(__cplusplus)
 void *user_new(std::size_t size) throw(std::bad_alloc);
 void *user_new(std::size_t size, const std::nothrow_t& x) throw();
@@ -36,4 +35,4 @@ void user_delete_array(void *ptr, std::size_t size, const std::nothrow_t& x) thr
 #endif // __cplusplus >= 201402L
 #endif // __cplusplus
 #endif // _USER_MEM_H
-	
+
